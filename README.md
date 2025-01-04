@@ -1,3 +1,14 @@
+# Integrating AdMob in Kotlin Multiplatform
+
+[Integrating AdMob in Kotlin Multiplatform: The Complete Guide - Medium blog post](https://andresand.medium.com/integrating-admob-in-kotlin-multiplatform-a-complete-guide-cc450e6d6c0c)
+
+## Android app ad banner image
+![Android App Image](android_ad_banner.png)
+
+## iOS app ad banner image
+![iOS App Image](ios_ad_banner.png)
+
+
 This is a Kotlin Multiplatform project targeting Android, iOS.
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
