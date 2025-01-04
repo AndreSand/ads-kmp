@@ -15,6 +15,8 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 
 import adskmp.composeapp.generated.resources.Res
 import adskmp.composeapp.generated.resources.compose_multiplatform
+import androidx.compose.foundation.layout.padding
+import androidx.compose.ui.unit.dp
 
 @Composable
 @Preview
@@ -25,6 +27,7 @@ fun App() {
             Button(onClick = { showContent = !showContent }) {
                 Text("Click me!")
             }
+            ShowAdBanner()
             AnimatedVisibility(showContent) {
                 val greeting = remember { Greeting().greet() }
                 Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
@@ -33,5 +36,14 @@ fun App() {
                 }
             }
         }
+    }
+}
+
+@Composable
+fun ShowAdBanner() {
+    Column {
+//        Text("Here is the banner!")
+        AdMobBanner(Modifier.fillMaxWidth().padding(16.dp))
+//        AdMobBanner(Modifier.fillMaxSize())
     }
 }
