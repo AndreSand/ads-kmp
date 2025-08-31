@@ -13,9 +13,9 @@ import UIKit
 import SwiftUI
 
 struct BannerAdView: UIViewRepresentable {
-    func makeUIView(context: Context) -> GADBannerView {
+    func makeUIView(context: Context) -> BannerView {
        
-        let bannerView = GADBannerView()
+        let bannerView = BannerView()
         // https://developers.google.com/admob/ios/quick-start
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2435281174" // Replace with your ad unit ID
         
@@ -24,10 +24,10 @@ struct BannerAdView: UIViewRepresentable {
             bannerView.rootViewController = rootViewController
         }
         
-        let request = GADRequest()
+        let request = Request()
         bannerView.load(request)
         return bannerView
     }
     
-    func updateUIView(_ uiView: GADBannerView, context: Context) {}
+    func updateUIView(_ uiView: BannerView, context: Context) {}
 }
